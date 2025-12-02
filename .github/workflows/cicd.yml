@@ -32,6 +32,6 @@ jobs: # Continous Integration  job
               with: 
                 role-to-assume: ${{env.AWS_ROLE}}
                 aws-region: ${{env.AWS_REGION}}
-            - name: Login to Amazon ECR
+            - name: Login to Amazon ECR private
               id: login-ecr
               uses: aws-actions/amazon-ecr-login@v1
